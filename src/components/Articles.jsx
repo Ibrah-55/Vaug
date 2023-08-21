@@ -72,23 +72,25 @@ Read All the latest trends of SEO in 2023
         <p>Suggested Reads: </p>
 
         </div>
-        <div className="text-end">
+        <div className="text-end mt-4">
           <form
-            className="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0"
+            className="flex flex-col justify-center w-full max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0"
             onSubmit={(e) => e.preventDefault()} 
           >
-            <div className=" relative ">
+            <div className=" mt-2">
               <input
                 type="text"
                 id="&quot;form-subscribe-Search"
-                className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                className="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4
+                 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                 placeholder="Enter a title"
                 value={searchQuery}
                 onChange={handleSearchInputChange}
               />
             </div>
             <button
-              className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200"
+              className="px-4 py-2 text-base font-semibold text-white 
+               bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200"
               type="submit"
             >
               Search
@@ -100,7 +102,7 @@ Read All the latest trends of SEO in 2023
         {displayedArticles.map((article, index) => (
           <div
             key={index}
-            className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-full"
+            className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-full md:w-full"
           >
             <a href={article.link} className="block w-full h-full">
               {/* <img

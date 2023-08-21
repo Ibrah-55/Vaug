@@ -12,6 +12,8 @@ import Customers from './components/Customers';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import { RatingWithComment } from './components/RatingWithComment';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 function App() {
   const theme = createTheme({
   });
@@ -19,7 +21,7 @@ function App() {
   return (
     <>
      <ThemeProvider theme={theme}>
-      <Hero />
+     <Hero />
       <Platforms />
       <Explore />
       <Services />
