@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Dashboard from './Dashboard'
+import Modal from './Helpers/Modal';
 import { NavbarWithMegaMenu } from './Navabr'
 import {
     Button,
@@ -11,8 +12,27 @@ import {
   } from "@material-tailwind/react";
 function Hero() {
     const [open, setOpen] = React.useState(false);
- 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const handleOpen = () => setOpen(!open);
+    const openModal = () => {
+        setIsModalOpen(true);
+      };
+    
+      const closeModal = () => {
+        setIsModalOpen(false);
+      };
+      useEffect(() => {
+        if (isModalOpen) {
+          document.body.style.overflow = 'hidden'; 
+        } else {
+          document.body.style.overflow = 'auto'; 
+        }
+    
+        return () => {
+          document.body.style.overflow = 'auto';   
+        };
+      }, [isModalOpen]);
   return (
     <div>
 <section className="bg-white overflow-hidden dark:bg-purple-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
@@ -30,11 +50,14 @@ Ignite Growth</h1>
         <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200 transition-transform transform-gpu hover:scale-110">Increase traffic on websites and get conversion. Bridging gap between you and your online customers</p>
         <p className="mb-8 mt-3  dark:text-gray-200 transition-transform transform-gpu hover:scale-110">Connect with us today to schedule a consultation and let us help you grow your business.</p>
 
-        <a href='/explore' className="text-white bg-primary-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 
-        font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Connect now</a>
+        <button onClick={openModal} className="text-white bg-primary-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 
+        font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Connect now</button>
+          <Modal isOpen={isModalOpen} onClose={closeModal}>
+
+      </Modal>
     </div>
 
-g
+
       <Dialog open={open} handler={handleOpen}>
         <DialogHeader>Its a simple dialog.</DialogHeader>
         <DialogBody divider>
@@ -60,14 +83,23 @@ g
     
 
 </section>
-<div className="mt-5 flex-wrap items-center justify-center gap-8 text-center sm:flex ">
+<div className="img has-hover x md-x lg-x y md-y lg-y" id="image_1516690834">
+								<div className="bg-blue-900">
+			<img width="8000" height="888" src="https://www.shipyaari.com/wp-content/uploads/2023/07/Wave-01-1.png" className="attachment-original size-original" alt=""
+             decoding="async" />						
+					</div>
+								
+
+	</div>
+    
+<div className="section-content flex flex-row w-full items-center justify-center gap-8 text-center">
 <div className="relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[400px] w-[300px] shadow-xl transition-transform transform-gpu hover:scale-110">
   <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[400px] w-[300px] shadow-xl">
     <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
     <div className="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
     <div className="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[178px] rounded-l-lg"></div>
     <div className="h-[64px] w-[3px] bg-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
-    <div className="rounded-[2rem] overflow-hidden w-[272px] h-[372px] bg-white dark:bg-gray-800">
+    <div className="rounded-[2rem] overflow-hidden w-[272px] h-[372px] bg-white dark:bg-gray-800 ">
         <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png" className="dark:hidden w-[272px] h-[372px]" alt="" />
         <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" className="hidden dark:block w-[272px] h-[372px]" alt="" />
     </div>
@@ -91,7 +123,7 @@ g
 
 
   
-<div className="relative border-gray-800 h-full dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[400px] w-[300px] shadow-xl">
+<div className="relative border-gray-800 h-full dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem]  w-[300px] shadow-xl">
 
 <div>
               <div className="lg:h-full py-8 px-6 text-gray-600 rounded-3xl border border-gray-200 bg-white">
