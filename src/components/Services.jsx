@@ -5,7 +5,7 @@ function Services() {
 
     <div>
         <section className="container mx-auto">
-            <div className="max-w-6xl mx-auto px-5 py-24 ">
+            <div className="max-w-4xl px-5 py-24 ">
               <div className="text-center mb-10">
                 <h1 className=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl hover:text-purple-600 transition duration-300 transform hover:scale-110 p-4 rounded-lg">Featured Services</h1>
                 <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto hover:text-blue-600 transition duration-300 transform hover:scale-110 p-4 rounded-lg">We’re constantly refining our product. Adding new features. Working to help your business grow.</p>
@@ -13,7 +13,7 @@ function Services() {
                   <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                 </div>
               </div>
-              <div className="flex flex-row sm:-m-4 -mx-4 -mb-10 -mt-4  ">
+              <div className="flex flex-row sm:-m-4 -mx-4 -mb-10 -mt-4 overflow-hidden ">
                 <div className="p-3 md:w-1/3 md:mb-0 mb-6 flex flex-col">
                   <div className="pattern-dots-md gray-light">
                     <div className="rounded-3xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6  "  >
@@ -66,7 +66,7 @@ function Services() {
             </div>
             <div className="p-5 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
                   <div className="pattern-dots-md gray-light">
-                    <div className="rounded-3xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6 ">
+                    <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6 ">
                       <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                       </div>
