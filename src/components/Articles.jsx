@@ -50,7 +50,7 @@ function Articles() {
     setSearchQuery(query);
 
     const filtered = articles.filter((article) =>
-      article.title.toLowerCase().includes(query.toLowerCase()) ||
+      article.title.toLowerCase().includes(query.toLowerCase()) || article.author.toLowerCase().includes(query.toLowerCase()) ||
       article.category.toLowerCase().includes(query.toLowerCase())
 
     );

@@ -34,10 +34,10 @@ export function NavbarWithMegaMenu() {
         <a href="#" className="flex items-center text-white">
           <img
             src="images/vaugenl.png"
-            className="h- w-20 mr-3 transition-transform transform hover:scale-150"
+            className="h- w-20 mr-3 transition-transform transform hover:scale-150 transform hover:scale-x-[-1] transition-transform"
             alt="Flowbite Logo"
           />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white italic">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white italic transform hover:scale-x-[-1] transition-transform">
             Vaug
           </span>
         </a>
@@ -128,10 +128,10 @@ export function NavbarWithMegaMenu() {
         <a href="#" className="flex items-center">
           <img
             src="images/vaugenl.png"
-            className="h-8 mr-3"
+            className="h-8 mr-3 transform hover:scale-x-[-1] transition-transform"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white italic">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white italic transform hover:scale-x-[-1] transition-transform">
             Vaug
           </span>
         </a>
