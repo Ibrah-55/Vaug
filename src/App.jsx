@@ -13,25 +13,80 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import { RatingWithComment } from './components/RatingWithComment';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
+import { useRef } from 'react';
 function App() {
   const theme = createTheme({
   });
-  
+  const servicesRef = useRef(null);
+  const articlesRef = useRef(null);
+  const platformRef = useRef(null);
+
+  const exploreRef = useRef(null);
+
+  const communityRef = useRef(null);
+  const contactRef = useRef(null);
+  const FooterRef = useRef(null);
+
+
+
+
+  const scrollToServices = () => {
+    servicesRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToPpatforms= () => {
+    platformRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollToArticles = () => {
+    articlesRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollToExplore = () => {
+    exploreRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollToCommunity= () => {
+    communityRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollToFooter= () => {
+    FooterRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <>
      <ThemeProvider theme={theme}>
-     <Hero />
-      <Platforms />
-      <Explore />
-      <Services />
-      <Community />
-      <Contact/>
-      <Articles />
+     <NavbarWithMegaMenu 
+     scrollToContact= {scrollToContact}
+     scrollToServices={scrollToServices}
+     scrollToFooter = {scrollToFooter}/>
+
+
+     <Hero 
+     scrollToContact={scrollToContact}
+    />
+<div ref={platformRef}>
+          <Platforms />
+        </div>    
+        <div ref={exploreRef}>
+          <Explore />
+        </div>
+      <div ref={servicesRef} id="/services">
+          <Services />
+        </div>
+        <div ref={communityRef}>
+          <Community/>
+        </div>       
+        <div ref={contactRef} id="/contact">
+          <Contact />
+        </div>     
+           <div ref={articlesRef} id="/articles">
+          <Articles />
+        </div>
       <Customers />
       <RatingWithComment />
-      <Footer />
-    </ThemeProvider>    </>
+      <div ref={FooterRef} id="/footer">
+          <Footer/>
+        </div>    </ThemeProvider>    </>
   )
 }
 

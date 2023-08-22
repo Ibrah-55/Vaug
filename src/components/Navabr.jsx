@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { Link } from 'react-scroll';
 export function NavbarWithMegaMenu() {
   const [showPopupNavbar, setShowPopupNavbar] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -29,12 +30,12 @@ export function NavbarWithMegaMenu() {
   
   return (
     <>
-    <nav className={`navbar bg-transparent border-gray-200 dark:bg-transparenttext-white p-4 top-0 w-full z-50 transition-transform transform duration-300 ${showPopupNavbar ? 'hidden' : ''}`}>
+    <nav className={`navbar bg-purple-900 border-gray-200 dark:bg-transparenttext-white p-4 top-0 w-full z-50 transition-transform transform duration-300 ${showPopupNavbar ? 'hidden' : ''}`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center text-white">
           <img
             src="images/vaugenl.png"
-            className="h- w-20 mr-3 transition-transform transform hover:scale-150 transform hover:scale-x-[-1] transition-transform"
+            className="h- w-20 mr-3 transition-transform transform hover:scale-150  hover:scale-x-[-1] "
             alt="Flowbite Logo"
           />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white italic transform hover:scale-x-[-1] transition-transform">
@@ -82,37 +83,35 @@ export function NavbarWithMegaMenu() {
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-purple-900 md:dark:bg-purple-900 dark:border-gray-700">
             <li>
            
-              <a
+            <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                className="block py-2 pl-3 pr-4 text-blue-900 font-bold rounded md:bg-transparent  md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 aria-current="page"
               >
                 Home
               </a>
             </li>
+           
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
+            <Link to="/services" smooth={true} duration={500}
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+            <Link to="/footer" smooth={true} duration={500}
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+            <Link to="/contact" smooth={true} duration={500}
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           
           </ul>
@@ -136,14 +135,12 @@ export function NavbarWithMegaMenu() {
           </span>
         </a>
         <div className="flex md:order-2">
-        <button
-  type="button"
+        <Link to="/contact" smooth={true} duration={500}
   className="hidden md:inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium top-right
-  rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
->
-  Get started
-</button>
-
+  rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"                >
+                Get Started
+              </Link>
+       
           <button
             data-collapse-toggle="navbar-cta"
             type="button"
@@ -184,28 +181,25 @@ export function NavbarWithMegaMenu() {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 text-blue-900 font-bold dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-blue-900 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
+            <Link to="/services" smooth={true} duration={500}
+                className="block py-2 pl-3 pr-4 text-blue-900 font-bold rounded md:bg-transparent  md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-blue-900 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
+            <Link to="/footer" smooth={true} duration={500}
+                className="block py-2 pl-3 pr-4 text-blue-900 font-bold rounded md:bg-transparent  md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                About
+              </Link>
+            </li>
+            <li>
+            <Link to="/contact" smooth={true} duration={500}
+                className="block py-2 pl-3 pr-4 text-blue-900 font-bold rounded md:bg-transparent  md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

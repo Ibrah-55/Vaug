@@ -10,7 +10,8 @@ import {
     DialogFooter,
     Input,
   } from "@material-tailwind/react";
-function Hero() {
+// eslint-disable-next-line react/prop-types
+function Hero({ scrollToContact }) {
     const [open, setOpen] = React.useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -36,7 +37,6 @@ function Hero() {
   return (
     <div>
 <section className="bg-white overflow-hidden dark:bg-purple-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
-<NavbarWithMegaMenu />
 
     <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
         <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
@@ -50,8 +50,9 @@ Ignite Growth</h1>
         <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200 transition-transform transform-gpu hover:scale-110">Increase traffic on websites and get conversion. Bridging gap between you and your online customers</p>
         <p className="mb-8 mt-3  dark:text-gray-200 transition-transform transform-gpu hover:scale-110">Connect with us today to schedule a consultation and let us help you grow your business.</p>
 
-        <button className="text-white bg-primary-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 
+        <button onClick={scrollToContact} className="text-white bg-primary-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 
         font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Connect now</button>
+          
           <Modal isOpen={isModalOpen} onClose={closeModal}>
 
       </Modal>
@@ -98,7 +99,7 @@ Ignite Growth</h1>
     
 <div className="section-content flex flex-col md:flex-row w-full items-center justify-center gap-8 text-center">
      
-  <div className="flex justify-center space-x-6 transition-transform transform-gpu hover:scale-110 ">
+  <div className="hidden md:inline-block  justify-center space-x-6 transition-transform transform-gpu hover:scale-110 ">
   
   <div className="relative border-gray-800 h-auto dark:border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem]  w-auto shadow-xl">
 
@@ -196,8 +197,9 @@ Ignite Growth</h1>
 </div>
 
 
+
     <div className="relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] 
-    rounded-[2.5rem] h-auto  max-w-auto md:h-auto  md:max-w-auto transition-transform transform-gpu hover:scale-110">
+    rounded-[2.5rem] h-auto  max-w-auto md:h-auto  md:max-w-auto transition-transform transform-gpu hover:scale-110 ">
   <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem] h-auto  max-w-auto md:h-auto  md:max-w-auto">
     <div className="h-auto w-auto bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[72px] rounded-l-lg"></div>
     <div className="h-auto w-auto bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
@@ -209,7 +211,7 @@ Ignite Growth</h1>
     </div>
 </div>
   </div>
-  <div className="relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem]
+  <div className="hidden md:inline-block relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem]
  h-auto w-auto shadow-xl transition-transform transform-gpu hover:scale-110">
     
   <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem] h-auto  w-auto shadow-xl">

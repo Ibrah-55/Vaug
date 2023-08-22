@@ -10,8 +10,8 @@ function Community() {
         <p className="mt-2 text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-2xl ransition duration-300 transform hover:scale-110 hover:text-blue-600 ">
         Choose us and join our community of happy clients - let us help you achieve your digital goals.        </p>
       </div>
-      <div className="flex flex-wrap my-10">
-        <div className="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/5 border-black transform hover:scale-110 ">
+      <div className="flex flex-wrap my-10  ">
+        <div className="w-full p-8 border-b md:border-r lg:w-1/5 border-black transform hover:scale-110 md:w-1/10">
           {/* <div className="flex items-center mb-6">
             <svg
               width="20"
