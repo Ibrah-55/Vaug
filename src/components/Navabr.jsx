@@ -25,6 +25,8 @@ export function NavbarWithMegaMenu() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [hasScrolled, showPopupNavbar]);
+
+  
   return (
     <>
     <nav className={`navbar bg-transparent border-gray-200 dark:bg-transparenttext-white p-4 top-0 w-full z-50 transition-transform transform duration-300 ${showPopupNavbar ? 'hidden' : ''}`}>
@@ -40,12 +42,14 @@ export function NavbarWithMegaMenu() {
           </span>
         </a>
         <div className="flex md:order-2">
-          <button
-            type="button"
-            className="text-white bg-yellow-00 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Get started
-          </button>
+        <button
+  type="button"
+  className="hidden md:inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium top-right
+  rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+>
+  Get started
+</button>
+
           <button
             data-collapse-toggle="navbar-cta"
             type="button"
@@ -77,6 +81,7 @@ export function NavbarWithMegaMenu() {
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-purple-900 md:dark:bg-purple-900 dark:border-gray-700">
             <li>
+           
               <a
                 href="#"
                 className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
@@ -109,9 +114,13 @@ export function NavbarWithMegaMenu() {
                 Contact
               </a>
             </li>
+          
           </ul>
+        
         </div>
+        
       </div>
+      
     </nav>
 
     <nav className={`popup-navbar bg-gray-500 text-white p-4 fixed top-0 w-full z-50 transform duration-300 ${showPopupNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
@@ -127,12 +136,14 @@ export function NavbarWithMegaMenu() {
           </span>
         </a>
         <div className="flex md:order-2">
-          <button
-            type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Get started
-          </button>
+        <button
+  type="button"
+  className="hidden md:inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium top-right
+  rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+>
+  Get started
+</button>
+
           <button
             data-collapse-toggle="navbar-cta"
             type="button"

@@ -61,7 +61,7 @@ function Articles() {
 
   return (
     <div className="w-full p-6 bg-gray-200">
-        <p className="title flex justify-center mb-4 text-3xl font-bold text-purple-800">
+        <p className="title flex justify-center mb-4 text-3xl font-bold text-purple-800 transform hover:scale-110">
           Learn with our Informative Blogs
           </p>
           <p className="text-2xl font-light text-gray-800">
@@ -102,7 +102,7 @@ Read All the latest trends of SEO in 2023
         {displayedArticles.map((article, index) => (
           <div
             key={index}
-            className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-full md:w-full"
+            className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-full md:w-full transform hover:scale-110 hover:overflow-visible"
           >
             <a href={article.link} className="block w-full h-full">
               {/* <img
@@ -110,7 +110,7 @@ Read All the latest trends of SEO in 2023
                 src={article.image}
                 className="object-cover w-full max-h-40"
               /> */}
-              <div className="w-full p-4 bg-white dark:bg-gray-800">
+              <div className="w-full p-4 bg-white dark:bg-gray-800 transform hover:scale-110">
                 <p className="font-medium text-yellow-500 text-md">
                <p className='text-purple-500'>  Category:</p>  {article.category}
                 </p>

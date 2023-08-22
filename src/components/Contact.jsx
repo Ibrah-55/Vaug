@@ -3,7 +3,7 @@ import React from 'react'
 function Contact() {
   return (
 <>
-<form className="w-full mb-10 font-sans bg-cover bg-landscape">
+<form className="w-full mb-10 font-sans bg-cover bg-landscape  transform hover:scale-110">
     <div className="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow dark:bg-gray-700">
         <div className="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white">
             Contact us !
