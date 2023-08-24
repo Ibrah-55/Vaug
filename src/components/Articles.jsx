@@ -102,7 +102,7 @@ Read All the latest trends of SEO in 2023
         {displayedArticles.map((article, index) => (
           <div
             key={index}
-            className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-full md:w-full transform hover:scale-110 hover:overflow-visible"
+            className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-full md:w-full "
           >
             <a href={article.link} className="block w-full h-full">
               {/* <img
@@ -110,7 +110,7 @@ Read All the latest trends of SEO in 2023
                 src={article.image}
                 className="object-cover w-full max-h-40"
               /> */}
-              <div className="w-full p-4 bg-white dark:bg-gray-800 transform hover:scale-110">
+              <div className="w-full p-4 bg-white dark:bg-gray-800 transform hover:scale-105">
                 <p className="font-medium text-yellow-500 text-md">
                <p className='text-purple-500'>  Category:</p>  {article.category}
                 </p>
