@@ -7,6 +7,7 @@ import About from './links/About.jsx';
 import Careers from './links/Careers.jsx';
 import Contacts from'./links/Contacts.jsx';
 import Terms from './links/Terms.jsx';
+import Blog from './links/Blog.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
@@ -17,6 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/careers" element={<Careers />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/blog" element={<Blog />} />
+
 
       </Routes>
     </Router>
