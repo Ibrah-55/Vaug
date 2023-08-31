@@ -2,6 +2,7 @@ import React from 'react'
 import Contact from '../components/Contact'
 import { NavbarWithMegaMenu } from '../components/Navabr'
 import Footer from '../components/Footer'
+import Community from '../components/Community'
 function Contacts() {
   return (
     <div>
@@ -12,6 +13,7 @@ Contact US Now
             </h2>
         <Contact />
       </div>
+      <Community/>
         < Footer/>
     </div>
   )

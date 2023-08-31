@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavbarWithMegaMenu } from '../components/Navabr'
 import Footer from '../components/Footer'
+import Customers from '../components/Customers'
+import Community from '../components/Community'
 
 function About() {
   return (
-    <div className='min-h-screen'>
+    <div className=''>
     < NavbarWithMegaMenu />
 
 
@@ -15,7 +17,7 @@ function About() {
     "Transform your digital presence with our expert marketing solutions."
 
     </p>
-<p className='min-h-screen  text-xl mr-10 ml-10 items-center justify-center'>
+<p className='  text-xl mr-10 ml-10 items-center justify-center'>
 At VAUG, we believe in providing customized digital solutions that help businesses transform their online presence and stay ahead in the competitive market. Our team of experts work closely with clients to understand their unique needs and challenges, and provide tailor-made strategies that drive measurable results and growth.
 <br/>
 VAUG is a digital solutions agency that specializes in helping businesses transform their online presence. Our team is comprised of experts in various fields such as SEO, web development, social media management, and digital marketing. Our mission is to help businesses achieve their goals by providing them with customized digital solutions that fit their unique needs and requirements.
@@ -24,8 +26,11 @@ At VAUG, we believe in staying up-to-date with the latest trends and technologie
  ensuring that our clients receive the best value for their investment. Our goal is to help businesses of all sizes and industries succeed in the digital world and reach their full potential.
 </p>
 </p>
-<div className='mx-auto bottom-0 w-full'>
+<Community />
+<Customers/>
 < Footer />
+
+<div>
 
 </div>
     </div>
