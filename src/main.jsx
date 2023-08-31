@@ -9,6 +9,7 @@ import Contacts from'./links/Contacts.jsx';
 import Terms from './links/Terms.jsx';
 import Blog from './links/Blog.jsx';
 import Service from './links/Service.jsx';
+import NotFound from './links/NotFound.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/blog" element={<Blog />} />
         <Route path="/services" element={<Service />} />
 
+        <Route path="*" element={<NotFound/>} />
 
 
       </Routes>
