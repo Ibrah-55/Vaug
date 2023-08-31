@@ -12,8 +12,9 @@ import Customers from './components/Customers';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import { RatingWithComment } from './components/RatingWithComment';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter} from 'react-router-dom';
 import { useRef } from 'react';
+import About from './links/About';
 function App() {
   const theme = createTheme({
   });
@@ -46,7 +47,7 @@ function App() {
   const scrollToContact = () => {
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
-  const scrollToCommunity= () => {
+  const scrollToAbout= () => {
     communityRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToFooter= () => {
@@ -86,7 +87,10 @@ function App() {
       <RatingWithComment />
       <div ref={FooterRef} id="/footer">
           <Footer/>
-        </div>    </ThemeProvider>    </>
+        </div>   
+        
+        
+         </ThemeProvider>    </>
   )
 }
 

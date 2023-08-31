@@ -51,7 +51,7 @@ function Footer() {
     return emailPattern.test(email);
   };
   return (
-    <footer className="bg-purple-900 dark:bg-purple-900">
+    <footer className="bg-purple-900 dark:bg-purple-900 bottom-0">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div className="transition duration-300 transform hover:scale-110">
@@ -61,7 +61,7 @@ function Footer() {
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
                 <a
-                  href="#"
+                  href="/about"
                   className=" hover:underline transition duration-300 transform hover:scale-110"
                 >
                   About Us
@@ -103,7 +103,7 @@ function Footer() {
                   href="#"
                   className="hover:underline transition duration-300 transform hover:scale-110"
                 >
-                  Discord Server
+                  WhatsApp
                 </a>
               </li>
               <li className="mb-4">

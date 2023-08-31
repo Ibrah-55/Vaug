@@ -52,7 +52,6 @@ function Articles() {
     const filtered = articles.filter((article) =>
       article.title.toLowerCase().includes(query.toLowerCase()) || article.author.toLowerCase().includes(query.toLowerCase()) ||
       article.category.toLowerCase().includes(query.toLowerCase())
-
     );
     setFilteredArticles(filtered);
   };
@@ -99,53 +98,57 @@ Read All the latest trends of SEO in 2023
         </div>
       </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-        {displayedArticles.map((article, index) => (
-          <div
-            key={index}
-            className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-full md:w-full "
-          >
-            <a href={article.link} className="block w-full h-full">
-              {/* <img
-                alt="blog photo"
-                src={article.image}
-                className="object-cover w-full max-h-40"
-              /> */}
-              <div className="w-full p-4 bg-white dark:bg-gray-800 transform hover:scale-105">
-                <p className="font-medium text-yellow-500 text-md">
-               <p className='text-purple-500'>  Category:</p>  {article.category}
-                </p>
-                <p className="mb-2 text-xl font-medium text-gray-800 dark:text-white">
-                  {article.title}
-                </p>
-                <p className="font-light text-gray-400 dark:text-gray-300 text-md">
-                  {article.summary}
-                </p>
-                <div className="flex items-center mt-4">
-                  {/* <a href="#" className="relative block">
-                    <img
-                      alt="profil"
-                      src={article.authorImage}
-                      className="mx-auto object-cover rounded-full h-10 w-10 "
-                    />
-                  </a> */}
-                  <p className="mb-2 text-sm italic font-medium text-gray-800 dark:text-white">
-                  {article.author}
-                </p>
-                  <div className="flex flex-col justify-between ml-4 text-sm">
-                    
-                    <p className="text-gray-400 dark:text-gray-300">
-                      {article.date} - {article.readTime} min read 
-
+        {displayedArticles.length > 0 ? (
+             displayedArticles.map((article, index) => (
+              <div
+                key={index}
+                className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-full md:w-full "
+              >
+                <a href={article.link} className="block w-full h-full">
+                  {/* <img
+                    alt="blog photo"
+                    src={article.image}
+                    className="object-cover w-full max-h-40"
+                  /> */}
+                  <div className="w-full p-4 bg-white dark:bg-gray-800 transform hover:scale-105">
+                    <p className="font-medium text-yellow-500 text-md">
+                   <p className='text-purple-500'>  Category:</p>  {article.category}
                     </p>
-
+                    <p className="mb-2 text-xl font-medium text-gray-800 dark:text-white">
+                      {article.title}
+                    </p>
+                    <p className="font-light text-gray-400 dark:text-gray-300 text-md">
+                      {article.summary}
+                    </p>
+                    <div className="flex items-center mt-4">
+                      {/* <a href="#" className="relative block">
+                        <img
+                          alt="profil"
+                          src={article.authorImage}
+                          className="mx-auto object-cover rounded-full h-10 w-10 "
+                        />
+                      </a> */}
+                      <p className="mb-2 text-sm italic font-medium text-gray-800 dark:text-white">
+                      {article.author}
+                    </p>
+                      <div className="flex flex-col justify-between ml-4 text-sm">
+                        
+                        <p className="text-gray-400 dark:text-gray-300">
+                          {article.date} - {article.readTime} min read 
+    
+                        </p>
+    
+                      </div>
+                      <div type="button" onClick= {article.link} className="ml-6 px-3 py-2 text-x font-medium text-center text-blue-500 underline"> Read More</div>
+                     
+                    </div>
                   </div>
-                  <div type="button" onClick= {article.link} className="ml-6 px-3 py-2 text-x font-medium text-center text-blue-500 underline"> Read More</div>
-
-                </div>
+                </a>
               </div>
-            </a>
-          </div>
-        ))}
+            ))
+        ): (
+          <div className='text-red-600'>No Matching Articles Found.</div>
+        )}
       </div>
     </div>
   );

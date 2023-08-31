@@ -11,7 +11,7 @@ function Community() {
         Choose us and join our community of happy clients - let us help you achieve your digital goals.        </p>
       </div>
       <div className="flex flex-wrap my-10  ">
-        <div className="w-full p-8 border-b md:border-r lg:w-1/5 border-black transform hover:scale-110 md:w-1/10">
+        <div className="w-full p-8 border-b md:border-r lg:w-1/5 border-black  md:w-1/10">
           {/* <div className="flex items-center mb-6">
             <svg
               width="20"
@@ -26,67 +26,67 @@ function Community() {
             <div className="ml-4 text-xl">Increase sales</div>
           </div> */}
           <img 
-          src="pa.png"/>
+          src="pa.png"  className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/5 border-black transform hover:scale-110">
+        <div className="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/5 border-black ">
         <img 
-          src="pb.png"/>
+          src="pb.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pc.png"/>
+          src="pc.png" className="transform hover:scale-110"/>
         </div>
        
-        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r border-black transform hover:scale-110">
+        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r border-black ">
         <img 
-          src="pd.png"/>
+          src="pd.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pe.png"/>
+          src="pe.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pf.png"/>
+          src="pf.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pg.png"/>
-        </div>  <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+          src="pg.png" className="transform hover:scale-110"/>
+        </div>  <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="ph.png"/>
-        </div>  <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+          src="ph.png" className="transform hover:scale-110"/>
+        </div>  <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pi.png"/>
+          src="pi.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8 border-b md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pj.png"/>
+          src="pj.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8  md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8  md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pk.png"/>
+          src="pk.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8 md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8 md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pl.png"/>
+          src="pl.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8 md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8 md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pm.png"/>
+          src="pm.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8  md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8  md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="pn.png"/>
+          src="pn.png" className="transform hover:scale-110"/>
         </div>
-        <div className="w-full p-8  md:w-1/2 lg:w-1/5 lg:border-r  border-black transform hover:scale-110">
+        <div className="w-full p-8  md:w-1/2 lg:w-1/5 lg:border-r  border-black ">
         <img 
-          src="po.png"/>
+          src="po.png" className="transform hover:scale-110"/>
         </div>
         
       </div>
     </div>
   );
-}
+  }
 
 export default Community;
