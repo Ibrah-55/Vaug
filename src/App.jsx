@@ -59,6 +59,8 @@ function App() {
      <NavbarWithMegaMenu 
      scrollToContact= {scrollToContact}
      scrollToServices={scrollToServices}
+     scrollToArticles={scrollToArticles}
+
      scrollToFooter = {scrollToFooter}/>
 
 

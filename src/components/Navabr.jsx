@@ -43,13 +43,13 @@ export function NavbarWithMegaMenu() {
           </span>
         </a>
         <div className="flex md:order-2">
-        <Link to="/contact" smooth={true} duration={500}
+        <a href="/contacts" 
   type="button"
   className="hidden md:inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium top-right
   rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
 >
   Contact Us!
-</Link>
+</a>
 
           <button
             data-collapse-toggle="navbar-cta"
@@ -100,17 +100,17 @@ export function NavbarWithMegaMenu() {
               </Link>
             </li>
             <li>
-            <Link to="/footer" smooth={true} duration={500}
+            <a href="/about" 
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 About
-              </Link>
+              </a>
             </li>
             <li>
             <Link to="/contact" smooth={true} duration={500}
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Contact
+                Blog
               </Link>
             </li>
           
@@ -135,11 +135,11 @@ export function NavbarWithMegaMenu() {
           </span>
         </a>
         <div className="flex md:order-2">
-        <Link to="/contact" smooth={true} duration={500}
+        <a href="/contacts" 
   className="hidden md:inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium top-right
   rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"                >
                 Contact Us!
-              </Link>
+              </a>
        
           <button
             data-collapse-toggle="navbar-cta"
@@ -195,10 +195,10 @@ export function NavbarWithMegaMenu() {
               </a>
             </li>
             <li>
-            <Link to="/contact" smooth={true} duration={500}
+            <Link to="/articles" smooth={true} duration={500}
                 className="block py-2 pl-3 pr-4 text-blue-900 font-bold rounded md:bg-transparent  md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                Contact
+                Blog
               </Link>
             </li>
           </ul>

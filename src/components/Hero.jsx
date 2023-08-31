@@ -118,6 +118,8 @@ Ignite Growth</h1>
                       </defs>
                   </svg>
                   <div className="mt-6">
+                  <h5 className="text-xl text-gray-700 text-center">Vaug</h5>
+
                       <h5 className="text-xl text-gray-700 text-center">Increase your company revenue upto</h5>
                       <div className="mt-2 flex justify-center gap-4">
                           <h3 className="text-3xl font-bold text-gray-700">80%</h3>
