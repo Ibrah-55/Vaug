@@ -90,7 +90,7 @@ Explore
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="/contacts"
                   className="hover:underline transition duration-300 transform hover:scale-110"
                 >
                   Contact us
@@ -98,7 +98,7 @@ Explore
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="/blog"
                   className="hover:underline transition duration-300 transform hover:scale-110"
                 >
                   Blog
@@ -106,22 +106,14 @@ Explore
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="/careers"
                   className="hover:underline transition duration-300 transform hover:scale-110"
                 >
                   Careers
                 </a>
                 
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="hover:underline transition duration-300 transform hover:scale-110"
-                >
-                  Pricing
-                </a>
-                
-              </li>
+            
             </ul>
           <div className="transition duration-300 transform hover:scale-110">
             
@@ -304,25 +296,17 @@ Explore
         <div className="px-3 py-5 flex flex-row md:flex md:items-center ">
               <div className="text-gray-500 mr-2 dark:text-gray-400 font-medium">
                 <a
-                  href="#"
+                  href="/privacy"
                   className="hover:underline transition duration-300 transform hover:scale-110"
                 >
-                  Privacy Policy 
-                  |
+                  Privacy Policy & Licensing |
+
                 </a>
               </div>
-              
+                             
               <div className="text-gray-500 mr-2 dark:text-gray-400 font-medium">
                 <a
-                  href="#"
-                  className="hover:underline transition duration-300 transform hover:scale-110"
-                >
-                  Licensing |
-                </a>
-              </div>
-              <div className="text-gray-500 mr-2 dark:text-gray-400 font-medium">
-                <a
-                  href="#"
+                  href="/terms"
                   className="hover:underline transition duration-300 transform hover:scale-110"
                 >
                   Terms &amp; Conditions
