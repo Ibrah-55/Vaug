@@ -51,7 +51,7 @@ Ignite Growth</h1>
         <p className="mb-8 mt-3  dark:text-gray-200 transition-transform transform-gpu hover:scale-110">Connect with us today to schedule a consultation and let us help you grow your business.</p>
 
         <button onClick={scrollToContact} className="text-white bg-primary-700 hover:bg-yellow-800 focus:ring-4 focus:ring-blue-300 
-        font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Connect now</button>
+        font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Contact us now</button>
           
           <Modal isOpen={isModalOpen} onClose={closeModal}>
 

@@ -128,7 +128,7 @@ export function NavbarWithMegaMenu() {
           <img
             src="images/vaugenl.png"
             className="h-8 mr-3 transform hover:scale-x-[-1] transition-transform"
-            alt="Flowbite Logo"
+            alt="Vaug"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white italic transform hover:scale-x-[-1] transition-transform">
             Vaug
