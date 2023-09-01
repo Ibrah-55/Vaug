@@ -36,7 +36,7 @@ function Hero({ scrollToContact }) {
   }, [isModalOpen]);
   return (
     <div>
-      <section className="bg-white overflow-hidden dark:bg-purple-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+      <section className="bg-white overflow-clip h-3/4 dark:bg-purple-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
           <a
             href="#"
@@ -84,37 +84,20 @@ function Hero({ scrollToContact }) {
             Contact us now
           </button>
 
-          <Modal isOpen={isModalOpen} onClose={closeModal}></Modal>
         </div>
 
-        <Dialog open={open} handler={handleOpen}>
-          <DialogHeader>Its a simple dialog.</DialogHeader>
-          <DialogBody divider>
-            The key to more success is to have a lot of pillows. Put it this
-            way, it took me twenty five years to get these plants, twenty five
-            years of blood sweat and tears, and I&apos;m never giving up,
-            I&apos;m just getting started. I&apos;m up to something. Fan luv.
-          </DialogBody>
-          <DialogFooter>
-            <Button
-              variant="text"
-              color="red"
-              onClick={handleOpen}
-              className="mr-1"
-            >
-              <span>Cancel</span>
-            </Button>
-            <Button variant="gradient" color="green" onClick={handleOpen}>
-              <span>Confirm</span>
-            </Button>
-          </DialogFooter>
-        </Dialog>
+     
+        {/* <div className=" justify-center items-center mt-32">
+        <Dashboard />
+
+        </div> */}
+
       </section>
       <div
         className="App img has-hover x md-x lg-x y md-y lg-y"
-        id="image_1516690834"
+        id=""
       >
-        <div className="bg-blue-900" >
+        <div className="bg-blue-900 h-20">
           <img
             width="8000"
             height="888"
@@ -125,7 +108,6 @@ function Hero({ scrollToContact }) {
           />
         </div>
 
-        <Dashboard />
       </div>
     </div>
   );

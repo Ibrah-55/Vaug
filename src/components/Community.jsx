@@ -2,7 +2,7 @@ import React from "react";
 
 function Community() {
   return (
-    <div className="container p-3 px-3 mx-auto bg-white dark:bg-white">
+    <div className="container mt-7 p-3 px-3 mx-auto bg-white dark:bg-white">
       <div className="mb-16 text-center">
         <h2 className="text-3xl font-bold tracking-wide text-purple-600 uppercase ransition duration-300 transform hover:scale-110 hover:text-4xl">
         Heartbeat Of Our Success
