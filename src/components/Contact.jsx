@@ -61,7 +61,7 @@ function Contact() {
         ref={form}
         onSubmit={sendEmail}
       >
-        <div className="w-full ml-3 mr-3  px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow dark:bg-gray-700">
+        <div className="w-full px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow dark:bg-gray-700">
           <div className="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white">
             Contact us !
           </div>
