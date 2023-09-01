@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import MenuItems from "./MenuItems";
 export function NavbarWithMegaMenu() {
   const [showPopupNavbar, setShowPopupNavbar] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const [showMenu, setShowMenu] = useState(false);
+  const [active, setActive] = useState(false);
 
+  const showMenus = () => {
+    setActive(!active);
+  };
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -36,7 +41,7 @@ export function NavbarWithMegaMenu() {
   return (
     <>
       <nav
-       id='nav' className={`navbar bg-purple-900 border-gray-200 dark:bg-transparenttext-white p-4 top-0 w-full z-50 transition-transform transform duration-300 ${
+       id='nav' className={`navbar bg-purple-900 border-gray-200  text-white p-4 top-0 w-full z-50 transition-transform transform duration-300 ${
           showPopupNavbar ? "hidden" : ""
         }`}
       >
@@ -63,8 +68,8 @@ export function NavbarWithMegaMenu() {
             </a>
 
             <button
-              onClick={toggleMenu}
-              data-collapse-toggle="nav"
+            onClick={showMenus}
+            data-collapse-toggle="nav"
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-cta"
@@ -130,6 +135,8 @@ export function NavbarWithMegaMenu() {
             </ul>
           </div>
         </div>
+        <MenuItems showMenus={showMenus} active={active} />
+
       </nav>
 
       <nav
@@ -156,8 +163,11 @@ export function NavbarWithMegaMenu() {
             >
               Contact Us!
             </a>
+            <MenuItems showMenus={showMenus} active={active} />
 
             <button
+            onClick={showMenus}
+
               data-collapse-toggle="navbar-cta"
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -223,6 +233,7 @@ export function NavbarWithMegaMenu() {
             </ul>
           </div>
         </div>
+        
       </nav>
     </>
   );
