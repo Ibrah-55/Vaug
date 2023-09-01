@@ -7,7 +7,7 @@ function Community() {
         <h2 className="text-3xl font-bold tracking-wide text-purple-600 uppercase ransition duration-300 transform hover:scale-110 hover:text-4xl">
         Heartbeat Of Our Success
         </h2>
-        <p className="mt-2 text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-2xl ransition duration-300 transform hover:scale-110 hover:text-blue-600 ">
+        <p className="mt-2 text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-2xl transition duration-300 transform hover:scale-110 hover:text-blue-600 ">
         Choose us and join our community of happy clients - let us help you achieve your digital goals.        </p>
       </div>
       <div className="flex flex-row my-10 h-auto items-center justify-center  max-w-auto md:h-auto  md:max-w-auto ">

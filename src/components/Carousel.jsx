@@ -50,7 +50,7 @@ function Carousels() {
         fontWeight: 'bold',
       }
       return (
-        <div className="App">
+        <div className="App mb-32">
           <div style={{ textAlign: "center" }}>
             <h2 className='hover:text-purple-700 transition duration-300 transform hover:scale-110'>Heartbeat Of Our Success</h2>
             <p className='transition duration-300 transform hover:scale-110 hover:text-blue-700'>Choose us and join our community of happy clients - let us help you achieve your digital goals.</p>

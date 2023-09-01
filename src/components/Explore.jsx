@@ -3,7 +3,7 @@ import Carousels from "./Carousel";
 
 function Explore() {
   return (
-    <div id="explore">
+    <div id="explore" className="">
       <span className="flex justify-center text-blue-600 dark:text-blue-500 font-extrabold text-3xl hover:text-purple-600 transition duration-300 transform hover:scale-110 p-4 rounded-lg">
         EXPLORE RECENT WORKS
       </span>
