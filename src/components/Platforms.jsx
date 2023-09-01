@@ -4,7 +4,7 @@ const Platforms = () => {
   return (
     <div>
       <div >
-        <div className=" mt-8 max-w-screen-xl px-4 mx-auto">
+        <div className=" mt-[-5rem] max-w-screen-xl px-4 mx-auto">
         
           <div className="pt-8 flex max-w-xs mx-auto items-center justify-between">
             <a
@@ -84,7 +84,7 @@ const Platforms = () => {
             </a>
             
           </div>
-          <div className="flex justify-center border-t-2  border-gray-300 my-4 w-screen px-4 mx-auto transform-gpu hover:scale-110 hover:text-purple-900">Transform your digital presence with our expert marketing solutions.</div>
+          <div className="flex justify-center border-t-2  border-gray-300 my-4 w-1/2 px-4 mx-auto transform-gpu hover:scale-110 hover:text-purple-900">Transform your digital presence with our expert marketing solutions.</div>
 
         </div>
 

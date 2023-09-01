@@ -97,7 +97,7 @@ function Hero({ scrollToContact }) {
         className="App img has-hover x md-x lg-x y md-y lg-y"
         id=""
       >
-        <div className="bg-blue-900 h-20">
+        <div className="bg-purple-900 ">
           <img
             width="8000"
             height="888"
