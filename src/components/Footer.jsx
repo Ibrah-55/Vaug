@@ -237,17 +237,16 @@ Explore
           </div>
             </ul>
           </div>
-          <div className="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
-          <div className="text-center pt-10 sm:pt-12 font-light">
-  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sign up for offers</h2>
-
-
-            <form
-              id="form"
-              ref={form}
-              onSubmit={sendEmail}
-              className="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0"
-            >
+          <div className="hidden md:inline-block relative text-center pt-10 sm:pt-12 font-light items-center justify-center">
+  <div className="text-center pt-10 sm:pt-12 font-light">
+    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sign up for offers</h2>
+    
+    <form
+      id="form"
+      ref={form}
+      onSubmit={sendEmail}
+      className="flex flex-col justify-center sm:w-full max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0"
+    >
               
               <div className="flex relative transition duration-300 transform hover:scale-110">
                 <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
@@ -291,7 +290,59 @@ Explore
           </div>
          
         </div>
-        <div className="border-t border-blue-500 border-solid w-fu;; mx-auto"></div>
+
+        <div className="md:hidden relative mb-4 text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
+  <div className="text-center pt-10 sm:pt-12 font-light">
+    <h2 className="mb-3 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sign up for offers</h2>
+    
+    <form
+      id="form"
+      ref={form}
+      onSubmit={sendEmail}
+      className="flex flex-col justify-center sm:w-full max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0"
+    >
+              
+              <div className="flex relative m-screen transition duration-300 transform hover:scale-110">
+                <span className="rounded-l-md inline-flex items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                  <svg
+                    width="15"
+                    height="15"
+                    fill="currentColor"
+                    viewBox="0 0 1792 1792"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"></path>
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  name="reply_to"
+                  id="reply_to"
+                  className={`rounded-r-lg flex-1 appearance-none border ${
+                    !validateEmail(form.current?.elements.reply_to.value)
+                      ? "border-red-500"
+                      : "border-gray-300"
+                  } w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 ${
+                    !validateEmail(form.current?.elements.reply_to.value)
+                      ? "focus:ring-red-500"
+                      : "focus:ring-purple-600"
+                  } focus:border-transparent`}
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+              <button
+                className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-black transition duration-300 transform hover:scale-110"
+                type="submit"
+                disabled={isSubmitting}
+
+              >
+                {isSubmitting ? "Subscribing..." : "Subscribe"}
+              </button>
+            </form>
+            </div>
+          </div>
+        <div className="border-t border-blue-500 border-solid w-full mx-auto"></div>
 
         <div className="px-3 py-5 flex flex-row md:flex md:items-center ">
               <div className="text-gray-500 mr-2 dark:text-gray-400 font-medium">
