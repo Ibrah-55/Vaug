@@ -11,7 +11,6 @@ import Customers from './components/Customers';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import { RatingWithComment } from './components/RatingWithComment';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter} from 'react-router-dom';
 import { useRef } from 'react';
 function App() {
   const theme = createTheme({

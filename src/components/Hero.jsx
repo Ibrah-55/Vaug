@@ -99,7 +99,7 @@ Ignite Growth</h1>
     
 <div className="section-content flex flex-col md:flex-row w-full items-center justify-center gap-8 text-center">
      
-  <div className="hidden md:inline-block  justify-center space-x-6 transition-transform transform-gpu hover:scale-110 ">
+  <div className=" justify-center space-x-6 transition-transform transform-gpu hover:scale-110 ">
   
   <div className="relative border-gray-800 h-auto dark:border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem]  w-auto shadow-xl">
 
@@ -200,7 +200,7 @@ Ignite Growth</h1>
 
 
 
-    <div className="relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] 
+    <div className="hidden md:inline-block relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] 
     rounded-[2.5rem] h-auto  max-w-auto md:h-auto  md:max-w-auto transition-transform transform-gpu hover:scale-110 ">
   <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem] h-auto  max-w-auto md:h-auto  md:max-w-auto">
     <div className="h-auto w-auto bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[72px] rounded-l-lg"></div>
@@ -213,6 +213,7 @@ Ignite Growth</h1>
     </div>
 </div>
   </div>
+
   <div className="hidden md:inline-block relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] rounded-[2.5rem]
  h-auto w-auto shadow-xl transition-transform transform-gpu hover:scale-110">
     
