@@ -4,7 +4,7 @@ const Platforms = () => {
   return (
     <div>
       <div >
-        <div className=" mt-[-5rem] max-w-screen-xl px-4 mx-auto">
+        <div className=" mt-[-2rem] max-w-screen-xl px-4 mx-auto">
         
           <div className="pt-8 flex max-w-xs mx-auto items-center justify-between">
             <a
