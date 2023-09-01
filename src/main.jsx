@@ -13,7 +13,7 @@ import NotFound from './links/NotFound.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
-    <Router>
+    <Router basename='https://vaug-8dyqfyaov-ibrah-55.vercel.app/'>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
