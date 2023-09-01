@@ -2,7 +2,6 @@ import './App.css'
 import { ThemeProvider, createTheme } from '@mui/material';
 import { NavbarWithMegaMenu } from './components/Navabr';
 import Hero from './components/Hero';
-import Dashboard from './components/Dashboard';
 import Platforms from './components/Platforms';
 import Explore from './components/Explore';
 import Services from './components/Services';
@@ -14,7 +13,6 @@ import Contact from './components/Contact';
 import { RatingWithComment } from './components/RatingWithComment';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter} from 'react-router-dom';
 import { useRef } from 'react';
-import About from './links/About';
 function App() {
   const theme = createTheme({
   });
